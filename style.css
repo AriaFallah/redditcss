@@ -541,7 +541,7 @@ button:active,
   display: none;
 }
 .subscribers .number::after {
-  content: ' protesters';
+  content: 'members';
   font-size: 10px;
   display: block;
 }
@@ -556,7 +556,7 @@ button:active,
   display: none;
 }
 .users-online .number::after {
-  content: ' protesting';
+  content: 'here';
   font-size: 10px;
   display: block;
 }
@@ -764,9 +764,9 @@ button:active,
 }
 .titlebox form.flairtoggle {
   margin-bottom: 5px;
+  margin-top: 15px;
   padding-bottom: 0px;
   padding-top: 0px;
-  margin-top: -6px;
   color: #c9aee0 !important;
   font-size: 10px !important;
 }
@@ -1016,7 +1016,7 @@ button:active,
 #search input:focus {
   outline: none;
 }
-#search input:after {
+#search input[name='q']:after {
   display: block;
   content: '';
   position: relative;
@@ -1213,7 +1213,6 @@ input:-moz-placeholder {
 .sidecontentbox {
   margin-right: 13px;
   margin-bottom: 0px;
-  margin-top: -20px;
   position: relative;
   left: 0px;
 }
@@ -1252,8 +1251,6 @@ input:-moz-placeholder {
   position: relative;
   left: 0px;
   margin-left: 0;
-  margin-bottom: -20px !important;
-  margin-top: -12px;
   padding: 8px;
   background-color: #fff;
   border: 0;
@@ -1376,6 +1373,10 @@ input:-moz-placeholder {
   letter-spacing: 0.5px;
   color: #c9aee0;
   text-transform: uppercase;
+}
+.toggle.res-sr-style-toggle {
+  position: absolute;
+  top: 588px;
 }
 .btn {
   text-transform: capitalize;
@@ -1737,6 +1738,12 @@ a.pretty-button:hover {
   box-shadow: 0 1px #e0cfee;
   margin-bottom: 30px;
 }
+#siteTable > .thing > .entry {
+  background-color: inherit !important;
+}
+#siteTable > .thing > .entry .md-container {
+  background-color: inherit !important;
+}
 .thing.spam {
   background-color: #e8d9cc;
   border-radius: 3px;
@@ -1910,83 +1917,83 @@ a[href$='#s']:hover {
   border-radius: 3px;
 }
 .icon-menu .reddit-edit:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-size: 120px 923px;
   background-position: -22px -799px;
   background-repeat: no-repeat;
 }
 .icon-menu .edit-stylesheet:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-size: 120px 923px;
   background-position: -47px -642px;
   background-repeat: no-repeat;
 }
 .icon-menu .community-rules:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -44px -821px;
   background-repeat: no-repeat;
 }
 .icon-menu .reddit-traffic:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -88px -821px;
   background-repeat: no-repeat;
 }
 .icon-menu .reddit-reported:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -22px -821px;
   background-repeat: no-repeat;
 }
 .icon-menu .reddit-spam:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -66px -821px;
   background-repeat: no-repeat;
 }
 .icon-menu .reddit-ban:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: 0px -799px;
   background-repeat: no-repeat;
 }
 .icon-menu .reddit-mute:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: 0px -821px;
   background-repeat: no-repeat;
 }
 .icon-menu .reddit-flair:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -66px -799px;
   background-repeat: no-repeat;
   margin-left: 1px;
 }
 .icon-menu .reddit-moderationlog:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -22px -843px;
   background-repeat: no-repeat;
   margin-left: 1px;
 }
 .icon-menu .reddit-unmoderated:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: 0px -843px;
   background-repeat: no-repeat;
   margin-left: 1px;
 }
 .icon-menu .reddit-edited:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -44px -799px;
   background-repeat: no-repeat;
   margin-left: 1px;
 }
 .icon-menu .reddit-automod:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -88px -777px;
   background-repeat: no-repeat;
 }
 .icon-menu .reddit-moderators:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -44px -843px;
   background-repeat: no-repeat;
 }
 .icon-menu .moderator-mail:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -61px -906px;
   background-repeat: no-repeat;
   width: 15px;
@@ -1995,12 +2002,12 @@ a[href$='#s']:hover {
   margin-left: 1px;
 }
 .icon-menu .reddit-contributors:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -66px -777px;
   background-repeat: no-repeat;
 }
 .icon-menu .reddit-modqueue:before {
-  background-image: url('%%spritesheet5%%');
+  background-image: url('%%spritesheet6%%');
   background-position: -88px -799px;
   background-repeat: no-repeat;
 }
@@ -3108,27 +3115,11 @@ textarea:focus {
   z-index: 1;
 }
 .submit-page #suggested-reddits {
-  margin-top: 8px;
-  text-align: center;
-}
-.submit-page #suggested-reddits h3 {
-  margin: 8px;
+  display: none;
 }
 .submit-page .infobar,
 .submit-page .roundfield.info-notice {
-  padding: 8px !important;
-  width: initial;
-  border-radius: 2px;
-  border: 1px solid #bbdefb;
-  background-color: #e3f2fd;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 30px,
-    rgba(255, 255, 255, 0.5) 30px,
-    rgba(255, 255, 255, 0.5) 60px
-  );
-  text-align: center;
+  display: none;
 }
 .file-upload-button,
 .submit-page #newlink.submit .btn {
@@ -3220,12 +3211,10 @@ textarea:focus {
   display: none;
 }
 #header-img {
-  display: block;
-  transform: scale(0.5);
+  display: block !important;
   position: absolute;
-  left: -84px;
-  top: -82px;
-  z-index: -1;
+  top: 64px;
+  background: none !important;
 }
 #header-bottom-left:after {
   display: block;
@@ -3548,18 +3537,7 @@ form input[type='checkbox'] {
 }
 .res .side .RESshortcutside,
 .res .side .RESDashboardToggle {
-  font-size: 0;
   transition: box-shadow 0.2s ease;
-}
-.res .side .RESshortcutside:after,
-.res .side .RESshortcutside.remove:after {
-  content: 'shortcut';
-  font-size: 11px;
-}
-.res .side .RESDashboardToggle:after,
-.res .side .RESDashboardToggle.remove:after {
-  content: 'dashboard';
-  font-size: 11px;
 }
 .res .side .RESshortcut {
   margin-right: 10px;
