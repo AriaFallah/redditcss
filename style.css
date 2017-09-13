@@ -18,23 +18,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
-  background-color: #fcf8ff;
+  background-color: #ffffff;
   min-height: 100%;
   position: relative;
   top: 15px;
   overflow-x: hidden;
-}
-body:before {
-  content: ' ';
-  position: fixed;
-  z-index: -99;
-  display: block;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  background: #fcf8ff url('%%background%%') no-repeat right top;
-  background-size: 350px 657px;
 }
 #body {
   padding-right: 0px;
@@ -101,10 +89,8 @@ button:active,
 }
 #header {
   height: 198px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, #3e2865 99%),
-    url('%%header%%');
-  background-position: center top;
-  background-size: 1999px 198px;
+  background-image: url('%%header%%');
+  background-size: cover;
   border-bottom: none;
   z-index: 9999;
 }
@@ -589,7 +575,7 @@ button:active,
   text-align: center !important;
   margin-left: 0px;
   margin-bottom: 12px;
-  background: url('%%titlebox%%') no-repeat center;
+  background: url('%%sidebar%%') no-repeat center;
   background-size: 247px 86px;
 }
 .titlebox::first-letter,
@@ -612,14 +598,12 @@ button:active,
   text-align: left;
   display: inline-block;
   position: relative;
-  left: 22px !important;
 }
 .titlebox .tagline .author::first-letter {
   text-transform: none;
 }
 .titlebox .tagline .flair {
   font-size: 10px;
-  float: right;
   margin-right: 56px;
   margin-top: 4px;
 }
@@ -1374,10 +1358,6 @@ input:-moz-placeholder {
   color: #c9aee0;
   text-transform: uppercase;
 }
-.toggle.res-sr-style-toggle {
-  position: absolute;
-  top: 588px;
-}
 .btn {
   text-transform: capitalize;
 }
@@ -1410,27 +1390,18 @@ input#img-name {
 .create-reddit.fancy-settings.thing:before {
   display: none;
 }
-.side .usertext blockquote,
-.side .md blockquote {
-  display: inline-block;
+.side .usertext blockquote {
+  display: block;
   border-top: 1px solid #e0cfee;
   width: 290px !important;
-  color: #4a4a4a !important;
-  font-size: 14px;
-  font-weight: 500;
-  border-left: 0px;
-  padding-left: 0px;
-  margin-left: 0px;
-  padding-top: 17px;
-  margin-top: 23px;
+  margin: 20px 0;
   line-height: 30px !important;
 }
-.side .usertext blockquote a,
-.side .usertext blockquote a:visited,
-.side .md blockquote a,
-.side .md blockquote a:visited {
-  color: #a4a4a4 !important;
+
+.side .usertext blockquote + * {
+  margin-top: 0;
 }
+
 .md a,
 .md a:visited {
   color: #9012fe;
@@ -2416,8 +2387,6 @@ a.thumbnail img {
   transform: translateX(-50%);
 }
 .thumbnail {
-}
-.thumbnail {
   background-color: #e8e8e8;
 }
 .thumbnail.self {
@@ -2530,7 +2499,6 @@ a.thumbnail[href^='https://redd.it'] img {
   font-size: 0px;
   color: #9b9b9b;
   letter-spacing: 0.6px;
-  text-transform: lowercase;
   font-weight: normal;
 }
 .link time {
@@ -3020,7 +2988,8 @@ textarea:focus {
 .sidebox.create {
   display: block;
   position: relative;
-  margin: 55px 0px 0px 0px;
+  margin-top: 25px;
+  margin-bottom: -15px;
   padding: 25px 0px 12px 0px;
   border-top: 1px solid #e0cfee;
   width: 300px;
@@ -3161,44 +3130,22 @@ textarea:focus {
   overflow: visible;
   float: right;
 }
-.linkflair-trailer .linkflairlabel {
-  background: #f68a23;
-}
-.linkflair-rumor .linkflairlabel {
-  background: #ff80da;
-}
-.linkflair-fan .linkflairlabel {
-  background: #7ed321;
-}
-.linkflair-article .linkflairlabel {
-  background: #3ad692;
-}
 .linkflair-news .linkflairlabel {
-  background: #4bbff4;
+  background: #4e4af4;
 }
-.linkflair-fanvid .linkflairlabel {
+.linkflair-media .linkflairlabel {
   background: #a588ff;
 }
-.linkflair-discussion .linkflairlabel {
-  background: #e4bd00;
-}
-.linkflair-other .linkflairlabel {
-  background: #b1b1b1;
-}
-.linkflair-meta .linkflairlabel {
-  background: black;
-}
-.linkflair-procss-sub-approved .linkflairlabel {
+.linkflair-announcement .linkflairlabel {
   background-color: #fb471e;
 }
-.linkflair-procss-discussion .linkflairlabel {
+.linkflair-discussion .linkflairlabel {
   background-color: #4bbff4;
 }
-.linkflair-procss-meme .linkflairlabel,
-.linkflair-procss-fluff .linkflairlabel {
+.linkflair-shitpost .linkflairlabel {
   background-color: #a28f74;
 }
-.linkflair-procss-meta .linkflairlabel {
+.linkflair-mod .linkflairlabel {
   background-color: #7ed321;
 }
 .flairselector .linkflairlabel {
