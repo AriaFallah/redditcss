@@ -308,7 +308,7 @@ button:active,
   margin: 0 10px;
   height: 0px;
   content: '';
-  background: #000000;
+  background: #ffdd00;
   transition: all 0.2s ease;
   z-index: 1;
 }
@@ -318,7 +318,7 @@ button:active,
 }
 #header .tabmenu li a:hover:after,
 #header .tabmenu li.selected a:after {
-  background: #000000;
+  background: #ffdd00;
   height: 3px;
   z-index: 1;
 }
@@ -565,7 +565,7 @@ button:active,
   margin-left: 0px;
   margin-bottom: 12px;
   background: url('%%sidebar%%') no-repeat center;
-  background-size: 247px 86px;
+  background-size: contain;
 }
 .titlebox::first-letter,
 .titlebox form.toggle::first-letter,
@@ -620,14 +620,14 @@ button:active,
   text-decoration: underline !important;
 }
 .side .md p {
-  color: #41106b;
+  color: #000000;
 }
 .side .md {
   text-align: left;
   color: #000000;
 }
 .side .md p em {
-  color: #561f86;
+  color: #000000;
   font-style: normal !important;
   font-weight: 400;
 }
@@ -647,7 +647,6 @@ button:active,
   display: block;
   width: 280px;
   margin: 19px 0 0px;
-  padding: 0 5px 0px;
   color: #000000 !important;
   background: transparent;
   font-size: 10px;
@@ -665,15 +664,18 @@ button:active,
   font-size: 0;
 }
 .titlebox .leavemoderator:before {
-  background: url('%%purple-shield%%');
-  background-position: 0 0 !important;
-  background-size: 100% 100%;
-  width: 12.5px;
-  height: 15px;
-  transform: translateX(-4px);
-}
-.titlebox .leavemoderator:before {
-  background-position: -32px -32px;
+  display: inline-block;
+  content: '';
+  width: 14px;
+  height: 17px;
+  background-image: url('%%spritesheet%%') !important;
+  background-size: 381px 64px;
+  background-position: -114px -32px;
+  position: relative;
+  top: 3px;
+  color: transparent !important;
+  margin-right: 6px;
+  margin-top: -5px;
 }
 .titlebox .leavemoderator:after,
 .titlebox form.leavecontributor-button:after {
@@ -2206,21 +2208,7 @@ body.search-page .submit-link .morelink {
   z-index: -1 !important;
 }
 .thumbnail.default {
-  background: #000000 !important;
-}
-.thumbnail:before {
-  display: block;
-  content: '';
-  padding: 12px;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-size: 31px 31px;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1 !important;
-  border-radius: 3px;
+  background-image: url('%%link%%') !important;
 }
 a.thumbnail img {
   position: relative;
@@ -2241,7 +2229,7 @@ a.thumbnail img {
   background-color: transparent !important;
 }
 .stickied .thumbnail {
-  background-color: #0ea34e !important;
+  background-image: url('%%link-green%%') !important;
   z-index: -1 !important;
 }
 .stickied .thumbnail:before {
@@ -2685,18 +2673,6 @@ textarea:focus {
   color: #000000 !important;
   text-transform: uppercase;
   letter-spacing: 1.12px;
-}
-.gold-accent .title:before {
-  display: inline-block;
-  content: '';
-  width: 19px;
-  height: 15px;
-  background-image: url('%%spritesheet%%') !important;
-  background-size: 381px 64px;
-  background-position: -114px -16px;
-  margin-right: 5px;
-  position: relative;
-  top: 2px;
 }
 .sidecontentbox .helplink {
   float: right;
