@@ -2688,26 +2688,6 @@ textarea:focus {
 .sidecontentbox .helplink:hover {
   text-decoration: underline !important;
 }
-.sidecontentbox .content .more {
-  font-weight: normal;
-  font-size: 0px;
-}
-.sidecontentbox .content .more::first-letter {
-  text-transform: uppercase;
-}
-.sidecontentbox .content .more a::after {
-  position: relative;
-  z-index: 1;
-  color: #000000 !important;
-  content: 'About moderation team >';
-  cursor: pointer;
-  display: inline-block;
-  font-weight: normal;
-  font-size: 10px;
-}
-.sidecontentbox .content .more:hover::after {
-  text-decoration: underline !important;
-}
 .side .reddit-link {
   margin-left: 0;
   margin-bottom: 6px;
@@ -2882,10 +2862,7 @@ textarea:focus {
   overflow: visible;
   float: right;
 }
-.linkflair-news .linkflairlabel {
-  background: #4e4af4;
-}
-.linkflair-media .linkflairlabel {
+.linkflair-gameplay .linkflairlabel {
   background: #a588ff;
 }
 .linkflair-announcement .linkflairlabel {
@@ -2897,7 +2874,7 @@ textarea:focus {
 .linkflair-shitpost .linkflairlabel {
   background-color: #a28f74;
 }
-.linkflair-mod .linkflairlabel {
+.linkflair-misc .linkflairlabel {
   background-color: #7ed321;
 }
 .flairselector .linkflairlabel {
