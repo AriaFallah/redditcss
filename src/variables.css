@@ -1,0 +1,16 @@
+:root {
+  --modGreen: #0ea34e;
+
+  --announcementFlair: #fb471e;
+  --discussionFlair: #4bbff4;
+  --gameplayFlair: #a588ff;
+  --shitpostFlair: #a28f74;
+  --miscFlair: #7ed321;
+
+  --backgroundColor: #121211;
+  --bodyText: #cebf96;
+  --headerText: #ffcb3d;
+
+  --linkColor: #2a2a2a;
+  --linkVisitedColor: #9b9b9b;
+}

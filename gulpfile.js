@@ -7,13 +7,13 @@ const options = {
 
 gulp.task('css', () =>
   gulp
-    .src('./src/*.css')
+    .src('./src/style.css')
     .pipe(postcss(options))
     .pipe(gulp.dest('./build')),
 )
 
-gulp.task('watch', () =>
-  gulp.watch(['./src/*.css', 'postcss.config.js'], ['css']),
+gulp.task('watch', ['css'], () =>
+  gulp.watch(['./src/**/*.css', 'postcss.config.js'], ['css']),
 )
 
 gulp.task('default', ['css'])

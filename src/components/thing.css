@@ -1,0 +1,121 @@
+#siteTable > .thing {
+  & .RES-keyNav-activeElement {
+    background-color: #fff !important;
+  }
+  & .md-container {
+    background-color: #fff !important;
+  }
+}
+
+.thing {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px -0.25px rgba(0, 0, 0, 0.25);
+  padding: 8px 2px;
+  transition: all 0.1s ease-in;
+
+  @nest &:hover {
+    box-shadow: 0 9px 16px -8px rgba(0, 0, 0, 0.25);
+  }
+
+  & .title {
+    color: var(--linkColor) !important;
+  }
+
+  & .title:visited {
+    color: var(--linkVisitedColor) !important;
+  }
+}
+
+.thing:not(.stickied) {
+  border: none !important;
+}
+
+.thing .rank {
+  display: none;
+}
+
+.thing .score.likes {
+  color: orangered;
+}
+
+.thing .score.dislikes {
+  color: #9587ff;
+}
+
+.thing .entry .title {
+  overflow: visible;
+}
+
+.thing .thumbnail {
+  height: 54px;
+  width: 54px;
+  margin: 0 10px 0 0;
+  border-radius: 3px;
+  background-position: 0 0 !important;
+  background-size: 54px 54px !important;
+  z-index: -1 !important;
+
+  & img {
+    height: 54px;
+    width: 54px;
+  }
+}
+
+.thing .thumbnail.default {
+  background-image: url('%%link%%') !important;
+}
+
+.thing .thumbnail.self {
+  background-image: url('%%dialog%%') !important;
+  z-index: -1 !important;
+}
+
+.thing.stickied .thumbnail {
+  background-image: url('%%link-green%%') !important;
+  z-index: -1 !important;
+}
+
+.thing.stickied .thumbnail.self {
+  background-image: url('%%dialog-green%%') !important;
+}
+
+.thing.stickied .title {
+  color: var(--modGreen) !important;
+}
+
+.thing .usertext-body .md {
+  border: none !important;
+}
+
+.comment.thing {
+  position: relative;
+  padding-left: 15px !important;
+}
+
+.comment.thing .entry .expand {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: -1px;
+  font-size: 0;
+  background-color: #f0f0f0;
+  transition: all 0.20;
+  text-decoration: none !important;
+
+  @nest &:hover {
+    background-color: #d8d8d8;
+  }
+}
+
+.comment.thing.noncollapsed .entry .expand::after {
+  content: "-";
+  font-size: 18px;
+}
+
+.comment.thing.collapsed .entry .expand::after {
+  content: "+";
+  top: 2.5px;
+  position: relative;
+  font-size: 18px;
+}

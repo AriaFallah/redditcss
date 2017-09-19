@@ -1,0 +1,10 @@
+.author.moderator {
+  color: var(--modGreen) !important;
+}
+
+.menuarea .togglebutton {
+  display: inline !important;
+  color: var(--modGreen) !important;
+  text-transform: capitalize;
+  text-align: right;
+}

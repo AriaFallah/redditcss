@@ -1,0 +1,39 @@
+.flairselector .flairsample-right {
+  height: 30px;
+}
+
+.linkflairlabel {
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  padding: 2px 6px;
+  overflow: visible;
+  font-weight: bold;
+}
+
+.title > .linkflairlabel {
+  position: relative;
+  top: 3px;
+  left: 4px;
+  float: right;
+}
+
+.linkflairlabel[title="GAMEPLAY"] {
+  background-color: var(--gameplayFlair) ;
+}
+
+.linkflairlabel[title="ANNOUNCEMENT"] {
+  background-color: var(--announcementFlair);
+}
+
+.linkflairlabel[title="DISCUSSION"] {
+  background-color: var(--discussionFlair);
+}
+
+.linkflairlabel[title="SHITPOST"] {
+  background-color: var(--shitpostFlair);
+}
+
+.linkflairlabel[title="MISC"] {
+  background-color: var(--miscFlair);
+}

@@ -1,4 +1,7 @@
 {
+  "browserslist": [
+    "defaults"
+  ],
   "dependencies": {
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
